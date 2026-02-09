@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { io } from 'socket.io-client';
+import { socket } from './socket';
 import { Canvas } from '@react-three/fiber';
 import Avatar3D from './components/Avatar3D';
 import VideoAvatar from './components/VideoAvatar';
@@ -13,12 +13,7 @@ import './App.css';
 // ============================================
 // SOCKET.IO CONNECTION
 // ============================================
-const socket = io('http://localhost:3001', {
-    autoConnect: false,
-    reconnection: true,
-    reconnectionAttempts: 5,
-    reconnectionDelay: 1000
-});
+// Socket instance is imported from ./socket.js
 
 // ============================================
 // QUICK TEST PHRASES

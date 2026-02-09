@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
-import { io } from 'socket.io-client';
+import { socket } from '../socket';
 import './DocumentUpload.css';
 
 // ============================================
@@ -17,7 +17,7 @@ const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 // ============================================
 // SOCKET CONNECTION
 // ============================================
-const socket = io('http://localhost:3001', { autoConnect: false });
+// Socket imported from ../socket
 
 // ============================================
 // DOCUMENT UPLOAD COMPONENT

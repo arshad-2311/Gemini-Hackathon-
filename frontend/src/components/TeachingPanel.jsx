@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { io } from 'socket.io-client';
+import { socket } from '../socket';
 import './TeachingPanel.css';
 
 // ============================================
@@ -47,7 +48,7 @@ const TABS = [
 // ============================================
 // SOCKET CONNECTION
 // ============================================
-const socket = io('http://localhost:3001', { autoConnect: false });
+// Using shared socket from ../socket.js
 
 // ============================================
 // TEACHING PANEL COMPONENT

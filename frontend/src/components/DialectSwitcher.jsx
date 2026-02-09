@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { io } from 'socket.io-client';
+import { socket } from '../socket';
 import './DialectSwitcher.css';
 
 // ============================================
@@ -56,7 +56,7 @@ const DIALECTS = {
 // ============================================
 // SOCKET CONNECTION
 // ============================================
-const socket = io('http://localhost:3001', { autoConnect: false });
+// Socket imported from ../socket
 
 // ============================================
 // DIALECT SWITCHER COMPONENT
