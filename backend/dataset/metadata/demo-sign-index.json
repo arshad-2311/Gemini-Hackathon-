@@ -1,0 +1,1245 @@
+{
+    "version": "1.0.0",
+    "description": "Demo sign index with 100 common signs for hackathon",
+    "mode": "demo",
+    "lastUpdated": "2026-01-30",
+    "stats": {
+        "totalSigns": 100,
+        "withVideos": 0,
+        "withProcedural": 100,
+        "withExternal": 50
+    },
+    "signs": {
+        "ASL": {
+            "HELLO": {
+                "gloss": "HELLO",
+                "category": "greetings",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=986",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/hello.htm"
+                },
+                "description": "Wave hand at forehead level, palm facing out",
+                "usage": "Greeting someone"
+            },
+            "GOODBYE": {
+                "gloss": "GOODBYE",
+                "category": "greetings",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=925",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/g/goodbye.htm"
+                },
+                "description": "Wave hand downward in farewell gesture",
+                "usage": "Saying farewell"
+            },
+            "THANK-YOU": {
+                "gloss": "THANK-YOU",
+                "category": "polite",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2179",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/thankyou.htm"
+                },
+                "description": "Hand moves from chin outward",
+                "usage": "Expressing gratitude"
+            },
+            "PLEASE": {
+                "gloss": "PLEASE",
+                "category": "polite",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1658",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/p/please.htm"
+                },
+                "description": "Hand circles on chest",
+                "usage": "Making polite requests"
+            },
+            "SORRY": {
+                "gloss": "SORRY",
+                "category": "polite",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2022",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/sorry.htm"
+                },
+                "description": "Fist circles on chest",
+                "usage": "Apologizing"
+            },
+            "YES": {
+                "gloss": "YES",
+                "category": "responses",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2422",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/y/yes.htm"
+                },
+                "description": "Fist nods up and down like nodding head",
+                "usage": "Affirmative response"
+            },
+            "NO": {
+                "gloss": "NO",
+                "category": "responses",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1493",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/n/no.htm"
+                },
+                "description": "Index and middle finger tap thumb",
+                "usage": "Negative response"
+            },
+            "HELP": {
+                "gloss": "HELP",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1015",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/help.htm"
+                },
+                "description": "Flat hand lifts A-hand upward",
+                "usage": "Requesting or offering assistance"
+            },
+            "WANT": {
+                "gloss": "WANT",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2342",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/want.htm"
+                },
+                "description": "Claw hands pull toward body",
+                "usage": "Expressing desire"
+            },
+            "NEED": {
+                "gloss": "NEED",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1476",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/n/need.htm"
+                },
+                "description": "X-hand bends at wrist repeatedly",
+                "usage": "Expressing necessity"
+            },
+            "LIKE": {
+                "gloss": "LIKE",
+                "category": "emotions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1283",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/l/like.htm"
+                },
+                "description": "Middle finger and thumb on chest, pull away",
+                "usage": "Expressing preference"
+            },
+            "LOVE": {
+                "gloss": "LOVE",
+                "category": "emotions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1303",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/l/love.htm"
+                },
+                "description": "Cross arms over chest in hug",
+                "usage": "Expressing love/affection"
+            },
+            "HAPPY": {
+                "gloss": "HAPPY",
+                "category": "emotions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=974",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/happy.htm"
+                },
+                "description": "Flat hands brush upward on chest repeatedly",
+                "usage": "Expressing happiness"
+            },
+            "SAD": {
+                "gloss": "SAD",
+                "category": "emotions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1876",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/sad.htm"
+                },
+                "description": "Open hands move down in front of face",
+                "usage": "Expressing sadness"
+            },
+            "ANGRY": {
+                "gloss": "ANGRY",
+                "category": "emotions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=62",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/a/angry.htm"
+                },
+                "description": "Claw hand in front of face, pull down",
+                "usage": "Expressing anger"
+            },
+            "UNDERSTAND": {
+                "gloss": "UNDERSTAND",
+                "category": "cognition",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2292",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/u/understand.htm"
+                },
+                "description": "Index finger flicks up near temple",
+                "usage": "Expressing comprehension"
+            },
+            "KNOW": {
+                "gloss": "KNOW",
+                "category": "cognition",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1210",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/k/know.htm"
+                },
+                "description": "Flat hand taps forehead",
+                "usage": "Indicating knowledge"
+            },
+            "THINK": {
+                "gloss": "THINK",
+                "category": "cognition",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2194",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/think.htm"
+                },
+                "description": "Index finger touches forehead",
+                "usage": "Indicating thought"
+            },
+            "REMEMBER": {
+                "gloss": "REMEMBER",
+                "category": "cognition",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1815",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/r/remember.htm"
+                },
+                "description": "Thumb touches forehead then thumb of other hand",
+                "usage": "Indicating memory"
+            },
+            "FORGET": {
+                "gloss": "FORGET",
+                "category": "cognition",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=831",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/f/forget.htm"
+                },
+                "description": "Hand wipes across forehead and opens",
+                "usage": "Indicating forgotten information"
+            },
+            "ME": {
+                "gloss": "ME",
+                "category": "pronouns",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/m/me.htm"
+                },
+                "description": "Point index finger to chest",
+                "usage": "Self-reference"
+            },
+            "YOU": {
+                "gloss": "YOU",
+                "category": "pronouns",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/y/you.htm"
+                },
+                "description": "Point index finger forward",
+                "usage": "Second person reference"
+            },
+            "HE": {
+                "gloss": "HE",
+                "category": "pronouns",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/he.htm"
+                },
+                "description": "Point to the side (male reference)",
+                "usage": "Third person male reference"
+            },
+            "SHE": {
+                "gloss": "SHE",
+                "category": "pronouns",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/she.htm"
+                },
+                "description": "Point to the side (female reference)",
+                "usage": "Third person female reference"
+            },
+            "THEY": {
+                "gloss": "THEY",
+                "category": "pronouns",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/they.htm"
+                },
+                "description": "Point and sweep to indicate group",
+                "usage": "Third person plural reference"
+            },
+            "WE": {
+                "gloss": "WE",
+                "category": "pronouns",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/we.htm"
+                },
+                "description": "Index finger arcs from shoulder to shoulder",
+                "usage": "First person plural reference"
+            },
+            "WHAT": {
+                "gloss": "WHAT",
+                "category": "questions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2368",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/what.htm"
+                },
+                "description": "Palms up, shake slightly back and forth",
+                "usage": "Asking about something"
+            },
+            "WHERE": {
+                "gloss": "WHERE",
+                "category": "questions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2373",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/where.htm"
+                },
+                "description": "Index finger shakes side to side",
+                "usage": "Asking about location"
+            },
+            "WHEN": {
+                "gloss": "WHEN",
+                "category": "questions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2370",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/when.htm"
+                },
+                "description": "Index finger circles then points",
+                "usage": "Asking about time"
+            },
+            "WHO": {
+                "gloss": "WHO",
+                "category": "questions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2382",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/who.htm"
+                },
+                "description": "Index finger circles lips",
+                "usage": "Asking about person"
+            },
+            "WHY": {
+                "gloss": "WHY",
+                "category": "questions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2383",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/why.htm"
+                },
+                "description": "Touch forehead, pull away into Y handshape",
+                "usage": "Asking reason"
+            },
+            "HOW": {
+                "gloss": "HOW",
+                "category": "questions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1047",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/how.htm"
+                },
+                "description": "Knuckles together, rotate palms up",
+                "usage": "Asking method"
+            },
+            "EAT": {
+                "gloss": "EAT",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=655",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/e/eat.htm"
+                },
+                "description": "Flat O hand moves to mouth",
+                "usage": "Eating action"
+            },
+            "DRINK": {
+                "gloss": "DRINK",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=621",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/d/drink.htm"
+                },
+                "description": "C hand moves to mouth like holding cup",
+                "usage": "Drinking action"
+            },
+            "SLEEP": {
+                "gloss": "SLEEP",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1988",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/sleep.htm"
+                },
+                "description": "5-hand closes to flat O while lowering from face",
+                "usage": "Sleeping action"
+            },
+            "WORK": {
+                "gloss": "WORK",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2405",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/work.htm"
+                },
+                "description": "S hands tap together at wrists",
+                "usage": "Work/job action"
+            },
+            "LEARN": {
+                "gloss": "LEARN",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1251",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/l/learn.htm"
+                },
+                "description": "Grab from palm and move to forehead",
+                "usage": "Learning action"
+            },
+            "TEACH": {
+                "gloss": "TEACH",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2160",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/teach.htm"
+                },
+                "description": "Flat O hands move forward from temples",
+                "usage": "Teaching action"
+            },
+            "GO": {
+                "gloss": "GO",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=914",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/g/go.htm"
+                },
+                "description": "Index fingers arc forward",
+                "usage": "Going somewhere"
+            },
+            "COME": {
+                "gloss": "COME",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=429",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/c/come.htm"
+                },
+                "description": "Index fingers arc toward body",
+                "usage": "Coming toward"
+            },
+            "STOP": {
+                "gloss": "STOP",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2070",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/stop.htm"
+                },
+                "description": "Flat hand chops down onto palm",
+                "usage": "Stopping action"
+            },
+            "WAIT": {
+                "gloss": "WAIT",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2335",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/wait.htm"
+                },
+                "description": "5-hands wiggle fingers, palms up",
+                "usage": "Waiting action"
+            },
+            "GIVE": {
+                "gloss": "GIVE",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=907",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/g/give.htm"
+                },
+                "description": "Flat O hands move forward and open",
+                "usage": "Giving action"
+            },
+            "TAKE": {
+                "gloss": "TAKE",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2148",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/take.htm"
+                },
+                "description": "5-hand closes while pulling toward body",
+                "usage": "Taking action"
+            },
+            "LOOK": {
+                "gloss": "LOOK",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1295",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/l/look.htm"
+                },
+                "description": "V-hand points from eyes outward",
+                "usage": "Looking action"
+            },
+            "SEE": {
+                "gloss": "SEE",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1912",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/see.htm"
+                },
+                "description": "V-hand from eyes moves outward",
+                "usage": "Seeing action"
+            },
+            "HEAR": {
+                "gloss": "HEAR",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1002",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/hear.htm"
+                },
+                "description": "Index finger points to ear",
+                "usage": "Hearing action"
+            },
+            "SAY": {
+                "gloss": "SAY",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1896",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/say.htm"
+                },
+                "description": "Index finger circles outward from chin",
+                "usage": "Speaking action"
+            },
+            "TELL": {
+                "gloss": "TELL",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2165",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/tell.htm"
+                },
+                "description": "Index finger moves forward from chin",
+                "usage": "Telling action"
+            },
+            "ASK": {
+                "gloss": "ASK",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=103",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/a/ask.htm"
+                },
+                "description": "Index fingers form question mark motion",
+                "usage": "Asking action"
+            },
+            "GOOD": {
+                "gloss": "GOOD",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=929",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/g/good.htm"
+                },
+                "description": "Flat hand from chin moves down to palm",
+                "usage": "Positive description"
+            },
+            "BAD": {
+                "gloss": "BAD",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=152",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/b/bad.htm"
+                },
+                "description": "Flat hand from chin flips down palm down",
+                "usage": "Negative description"
+            },
+            "BIG": {
+                "gloss": "BIG",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=198",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/b/big.htm"
+                },
+                "description": "L-hands move apart",
+                "usage": "Size description"
+            },
+            "SMALL": {
+                "gloss": "SMALL",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1991",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/small.htm"
+                },
+                "description": "Flat hands move together",
+                "usage": "Size description"
+            },
+            "HOT": {
+                "gloss": "HOT",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1044",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/hot.htm"
+                },
+                "description": "C-hand at mouth twists away",
+                "usage": "Temperature description"
+            },
+            "COLD": {
+                "gloss": "COLD",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=421",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/c/cold.htm"
+                },
+                "description": "S-hands shake near shoulders",
+                "usage": "Temperature description"
+            },
+            "NEW": {
+                "gloss": "NEW",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1484",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/n/new.htm"
+                },
+                "description": "Curved hand scoops across palm",
+                "usage": "Age description"
+            },
+            "OLD": {
+                "gloss": "OLD",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1524",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/o/old.htm"
+                },
+                "description": "C-hand moves down from chin",
+                "usage": "Age description"
+            },
+            "FAST": {
+                "gloss": "FAST",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=747",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/f/fast.htm"
+                },
+                "description": "L-hands snap closed quickly",
+                "usage": "Speed description"
+            },
+            "SLOW": {
+                "gloss": "SLOW",
+                "category": "descriptions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1990",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/slow.htm"
+                },
+                "description": "Hand slowly slides up back of other hand",
+                "usage": "Speed description"
+            },
+            "MOTHER": {
+                "gloss": "MOTHER",
+                "category": "family",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1425",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/m/mother.htm"
+                },
+                "description": "5-hand thumb touches chin",
+                "usage": "Family reference"
+            },
+            "FATHER": {
+                "gloss": "FATHER",
+                "category": "family",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=752",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/f/father.htm"
+                },
+                "description": "5-hand thumb touches forehead",
+                "usage": "Family reference"
+            },
+            "FRIEND": {
+                "gloss": "FRIEND",
+                "category": "people",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=855",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/f/friend.htm"
+                },
+                "description": "X-hands hook together and switch",
+                "usage": "Social reference"
+            },
+            "FAMILY": {
+                "gloss": "FAMILY",
+                "category": "family",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=737",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/f/family.htm"
+                },
+                "description": "F-hands circle outward and together",
+                "usage": "Family group reference"
+            },
+            "HOME": {
+                "gloss": "HOME",
+                "category": "places",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1036",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/home.htm"
+                },
+                "description": "Flat O touches corner of mouth then cheek",
+                "usage": "Place reference"
+            },
+            "SCHOOL": {
+                "gloss": "SCHOOL",
+                "category": "places",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1904",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/school.htm"
+                },
+                "description": "Flat hands clap twice",
+                "usage": "Place reference"
+            },
+            "STORE": {
+                "gloss": "STORE",
+                "category": "places",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2072",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/store.htm"
+                },
+                "description": "Flat O hands twist outward",
+                "usage": "Place reference"
+            },
+            "HOSPITAL": {
+                "gloss": "HOSPITAL",
+                "category": "places",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1042",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/hospital.htm"
+                },
+                "description": "H-hand draws cross on upper arm",
+                "usage": "Medical place reference"
+            },
+            "BATHROOM": {
+                "gloss": "BATHROOM",
+                "category": "places",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=166",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/b/bathroom.htm"
+                },
+                "description": "T-hand shakes",
+                "usage": "Restroom reference"
+            },
+            "FOOD": {
+                "gloss": "FOOD",
+                "category": "objects",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=822",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/f/food.htm"
+                },
+                "description": "Flat O taps lips",
+                "usage": "Object reference"
+            },
+            "WATER": {
+                "gloss": "WATER",
+                "category": "objects",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2347",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/w/water.htm"
+                },
+                "description": "W-hand taps chin twice",
+                "usage": "Object reference"
+            },
+            "BOOK": {
+                "gloss": "BOOK",
+                "category": "objects",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=230",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/b/book.htm"
+                },
+                "description": "Palms together open like a book",
+                "usage": "Object reference"
+            },
+            "PHONE": {
+                "gloss": "PHONE",
+                "category": "objects",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1645",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/p/phone.htm"
+                },
+                "description": "Y-hand at ear",
+                "usage": "Object reference"
+            },
+            "CAR": {
+                "gloss": "CAR",
+                "category": "objects",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=326",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/c/car.htm"
+                },
+                "description": "Fists move like steering a wheel",
+                "usage": "Vehicle reference"
+            },
+            "MONEY": {
+                "gloss": "MONEY",
+                "category": "objects",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1414",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/m/money.htm"
+                },
+                "description": "Flat O taps palm twice",
+                "usage": "Financial reference"
+            },
+            "TIME": {
+                "gloss": "TIME",
+                "category": "time",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2209",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/time.htm"
+                },
+                "description": "Index finger taps back of wrist",
+                "usage": "Time reference"
+            },
+            "NOW": {
+                "gloss": "NOW",
+                "category": "time",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1502",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/n/now.htm"
+                },
+                "description": "Y-hands drop down slightly",
+                "usage": "Present time reference"
+            },
+            "LATER": {
+                "gloss": "LATER",
+                "category": "time",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1241",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/l/later.htm"
+                },
+                "description": "L-hand thumb on palm rotates forward",
+                "usage": "Future time reference"
+            },
+            "BEFORE": {
+                "gloss": "BEFORE",
+                "category": "time",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=177",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/b/before.htm"
+                },
+                "description": "Flat hand moves back toward body from in front of other hand",
+                "usage": "Past time reference"
+            },
+            "AFTER": {
+                "gloss": "AFTER",
+                "category": "time",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=46",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/a/after.htm"
+                },
+                "description": "Flat hand moves forward from behind other hand",
+                "usage": "Future time reference"
+            },
+            "TODAY": {
+                "gloss": "TODAY",
+                "category": "time",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2220",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/today.htm"
+                },
+                "description": "Y-hands drop, then 'day' sign",
+                "usage": "Current day reference"
+            },
+            "TOMORROW": {
+                "gloss": "TOMORROW",
+                "category": "time",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2232",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/t/tomorrow.htm"
+                },
+                "description": "A-hand thumb touches cheek and arcs forward",
+                "usage": "Next day reference"
+            },
+            "YESTERDAY": {
+                "gloss": "YESTERDAY",
+                "category": "time",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=2423",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/y/yesterday.htm"
+                },
+                "description": "A-hand thumb touches chin then cheek",
+                "usage": "Previous day reference"
+            },
+            "MORE": {
+                "gloss": "MORE",
+                "category": "quantities",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1419",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/m/more.htm"
+                },
+                "description": "Flat O hands tap together",
+                "usage": "Quantity expression"
+            },
+            "FINISH": {
+                "gloss": "FINISH",
+                "category": "actions",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=788",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/f/finish.htm"
+                },
+                "description": "5-hands flip over and down",
+                "usage": "Completion marker"
+            },
+            "AGAIN": {
+                "gloss": "AGAIN",
+                "category": "adverbs",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=47",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/a/again.htm"
+                },
+                "description": "Bent hand arcs up and touches palm",
+                "usage": "Repetition marker"
+            },
+            "ALWAYS": {
+                "gloss": "ALWAYS",
+                "category": "adverbs",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=58",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/a/always.htm"
+                },
+                "description": "Index finger makes circles in the air",
+                "usage": "Frequency marker"
+            },
+            "NEVER": {
+                "gloss": "NEVER",
+                "category": "adverbs",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1482",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/n/never.htm"
+                },
+                "description": "Flat hand sweeps down in S-shape",
+                "usage": "Negative frequency marker"
+            },
+            "NAME": {
+                "gloss": "NAME",
+                "category": "identifiers",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1464",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/n/name.htm"
+                },
+                "description": "H-hands tap together at fingers",
+                "usage": "Identity reference"
+            },
+            "DEAF": {
+                "gloss": "DEAF",
+                "category": "identifiers",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=547",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/d/deaf.htm"
+                },
+                "description": "Index finger touches ear then corner of mouth",
+                "usage": "Identity reference"
+            },
+            "HEARING": {
+                "gloss": "HEARING",
+                "category": "identifiers",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1004",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/h/hearing.htm"
+                },
+                "description": "Index finger circles at mouth",
+                "usage": "Identity reference"
+            },
+            "SIGN": {
+                "gloss": "SIGN",
+                "category": "communication",
+                "difficulty": "beginner",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1961",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/sign.htm"
+                },
+                "description": "Index fingers alternate pointing and circling",
+                "usage": "Sign language action"
+            },
+            "PRACTICE": {
+                "gloss": "PRACTICE",
+                "category": "actions",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1687",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/p/practice.htm"
+                },
+                "description": "A-hand brushes back and forth on index finger",
+                "usage": "Repetitive learning action"
+            },
+            "DIFFERENT": {
+                "gloss": "DIFFERENT",
+                "category": "descriptions",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=587",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/d/different.htm"
+                },
+                "description": "Index fingers cross and separate",
+                "usage": "Contrast marker"
+            },
+            "SAME": {
+                "gloss": "SAME",
+                "category": "descriptions",
+                "difficulty": "intermediate",
+                "videoPath": null,
+                "hasProcedural": true,
+                "externalLinks": {
+                    "handspeak": "https://www.handspeak.com/word/search/index.php?id=1879",
+                    "lifeprint": "https://www.lifeprint.com/asl101/pages-signs/s/same.htm"
+                },
+                "description": "Y-hands come together",
+                "usage": "Similarity marker"
+            }
+        }
+    }
+}

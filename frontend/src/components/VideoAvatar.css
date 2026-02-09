@@ -1,0 +1,481 @@
+/* ============================================
+   VIDEO AVATAR STYLES
+   Hybrid video + 3D procedural animation
+   ============================================ */
+
+/* Container */
+.video-avatar-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Video Player */
+.avatar-video {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease;
+}
+
+.avatar-video.visible {
+    opacity: 1;
+    display: block;
+}
+
+.avatar-video.hidden {
+    opacity: 0;
+    display: none;
+}
+
+/* Canvas for Procedural Animation */
+.avatar-canvas {
+    border-radius: 16px;
+    background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 100%);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease;
+}
+
+.avatar-canvas.visible {
+    opacity: 1;
+    display: block;
+}
+
+.avatar-canvas.hidden {
+    opacity: 0;
+    display: none;
+}
+
+/* Fingerspelling Display */
+.fingerspelling-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.letter-sequence {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.letter {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+    animation: letterPop 0.3s ease forwards;
+}
+
+@keyframes letterPop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fingerspell-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+/* Procedural Display */
+.procedural-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.sign-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.sign-description {
+    color: white;
+    font-size: 18px;
+    max-width: 300px;
+    line-height: 1.5;
+}
+
+.sign-category {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: white;
+    z-index: 10;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top-color: #10b981;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Error Overlay */
+.error-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(239, 68, 68, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 24px 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    z-index: 15;
+}
+
+.error-icon {
+    font-size: 32px;
+}
+
+.error-overlay button {
+    background: white;
+    color: #ef4444;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.error-overlay button:hover {
+    transform: scale(1.05);
+}
+
+/* Sign Indicator */
+.sign-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 16px 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 200px;
+    z-index: 5;
+}
+
+.sign-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    letter-spacing: 2px;
+}
+
+.sign-counter {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981, #34d399);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.sign-mode {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Avatar Controls */
+.avatar-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+    z-index: 5;
+}
+
+.control-btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+/* Mode Indicator */
+.mode-indicator {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+}
+
+.mode-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mode-badge.video {
+    background: rgba(59, 130, 246, 0.8);
+    color: white;
+}
+
+.mode-badge.procedural {
+    background: rgba(139, 92, 246, 0.8);
+    color: white;
+}
+
+.mode-badge.fingerspelling {
+    background: rgba(245, 158, 11, 0.8);
+    color: white;
+}
+
+.mode-badge.idle {
+    background: rgba(107, 114, 128, 0.8);
+    color: white;
+}
+
+/* Empty State */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 40px;
+    text-align: center;
+}
+
+.empty-icon {
+    font-size: 80px;
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.empty-state h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.empty-state p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-avatar-container {
+        border-radius: 12px;
+        min-height: 300px;
+    }
+
+    .avatar-video {
+        max-width: 95%;
+        max-height: 70%;
+    }
+
+    .sign-indicator {
+        padding: 12px 24px;
+        min-width: 160px;
+    }
+
+    .sign-text {
+        font-size: 22px;
+    }
+
+    .avatar-controls {
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .control-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .letter {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+    }
+
+    .sign-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sign-indicator {
+        left: 10px;
+        right: 10px;
+        transform: none;
+        bottom: 10px;
+    }
+
+    .avatar-controls {
+        position: static;
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .video-avatar-container {
+        background: linear-gradient(135deg, #0f0a1e 0%, #1a1333 50%, #2d2455 100%);
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .spinner,
+    .sign-icon,
+    .empty-icon,
+    .letter {
+        animation: none;
+    }
+
+    .control-btn:hover {
+        transform: none;
+    }
+}

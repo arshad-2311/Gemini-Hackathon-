@@ -1,0 +1,485 @@
+/* ========================================
+   Spatial Indicator Styles
+   ======================================== */
+
+.spatial-indicator {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 20;
+    overflow: hidden;
+}
+
+/* ========================================
+   OBJECT MARKERS
+   ======================================== */
+
+.object-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.object-marker:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: 10;
+}
+
+/* Entry/Exit Animations */
+.object-marker.entering {
+    animation: markerFadeIn 0.5s ease forwards;
+}
+
+.object-marker.leaving {
+    animation: markerFadeOut 0.5s ease forwards;
+}
+
+@keyframes markerFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes markerFadeOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+}
+
+/* Marker Dot */
+.marker-dot {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--marker-color, #ef4444);
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3),
+        0 0 15px color-mix(in srgb, var(--marker-color, #ef4444) 50%, transparent);
+}
+
+.marker-icon {
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+/* Pulse Animation */
+.marker-pulse {
+    position: absolute;
+    inset: -4px;
+    border: 2px solid var(--marker-color, #ef4444);
+    border-radius: 50%;
+    animation: markerPulse 2s ease-out infinite;
+    opacity: 0;
+}
+
+.marker-pulse.delay {
+    animation-delay: 1s;
+}
+
+@keyframes markerPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+/* Marker Label */
+.marker-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.label-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+}
+
+.label-confidence {
+    font-size: 0.65rem;
+    color: var(--marker-color, #10b981);
+    font-weight: 700;
+}
+
+/* ========================================
+   ACTIVE HIGHLIGHT
+   ======================================== */
+
+.object-marker.active .marker-dot {
+    animation: activeBounce 0.5s ease;
+}
+
+@keyframes activeBounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+.active-highlight {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.highlight-ring {
+    position: absolute;
+    inset: 0;
+    border: 3px solid var(--marker-color, #6366f1);
+    border-radius: 50%;
+    animation: ringExpand 1.5s ease-out infinite;
+}
+
+.highlight-ring.delay {
+    animation-delay: 0.75s;
+}
+
+@keyframes ringExpand {
+    0% {
+        transform: scale(0.6);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* ========================================
+   TOOLTIP
+   ======================================== */
+
+.object-tooltip {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    width: 200px;
+    background: rgba(20, 20, 50, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    border-radius: 12px;
+    padding: 12px;
+    pointer-events: none;
+    z-index: 100;
+    animation: tooltipFadeIn 0.2s ease;
+}
+
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -100%) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -100%) translateY(0);
+    }
+}
+
+/* Tooltip arrow */
+.object-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid rgba(20, 20, 50, 0.95);
+}
+
+.tooltip-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tooltip-icon {
+    font-size: 1.3rem;
+}
+
+.tooltip-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+
+.tooltip-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tooltip-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.tooltip-label {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tooltip-value {
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: capitalize;
+}
+
+.tooltip-gloss {
+    padding: 2px 8px;
+    background: rgba(99, 102, 241, 0.3);
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: #818cf8;
+}
+
+.tooltip-hint {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+/* ========================================
+   POINTER LINE
+   ======================================== */
+
+.pointer-line-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 15;
+}
+
+.pointer-line {
+    animation: drawLine 0.5s ease forwards;
+}
+
+@keyframes drawLine {
+    from {
+        stroke-dashoffset: 100;
+        opacity: 0;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   POINTING BANNER
+   ======================================== */
+
+.pointing-banner {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: rgba(99, 102, 241, 0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    pointer-events: none;
+    animation: bannerSlideIn 0.3s ease;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+}
+
+@keyframes bannerSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.pointing-icon {
+    font-size: 1.2rem;
+    animation: pointBounce 0.5s ease infinite alternate;
+}
+
+@keyframes pointBounce {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(5px);
+    }
+}
+
+.pointing-text {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.pointing-text strong {
+    text-transform: capitalize;
+}
+
+.pointing-gloss {
+    padding: 4px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* ========================================
+   OBJECTS COUNT BADGE
+   ======================================== */
+
+.objects-count-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+.count-icon {
+    font-size: 1rem;
+}
+
+.count-number {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #10b981;
+}
+
+.count-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .marker-dot {
+        width: 30px;
+        height: 30px;
+    }
+
+    .marker-icon {
+        font-size: 0.9rem;
+    }
+
+    .marker-label {
+        padding: 3px 8px;
+    }
+
+    .label-name {
+        font-size: 0.65rem;
+    }
+
+    .object-tooltip {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .pointing-banner {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    .objects-count-badge {
+        padding: 6px 10px;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .marker-pulse,
+    .highlight-ring,
+    .pointing-icon {
+        animation: none;
+    }
+
+    .object-marker.entering,
+    .object-marker.leaving,
+    .pointer-line,
+    .pointing-banner,
+    .object-tooltip {
+        animation: none;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+
+    .marker-label,
+    .object-tooltip,
+    .pointing-banner,
+    .objects-count-badge {
+        background: rgba(0, 0, 0, 0.95);
+        border: 2px solid white;
+    }
+}

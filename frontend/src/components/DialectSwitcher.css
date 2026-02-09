@@ -1,0 +1,531 @@
+/* ========================================
+   Dialect Switcher Styles
+   ======================================== */
+
+.dialect-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ========================================
+   MAIN BUTTONS
+   ======================================== */
+
+.dialect-buttons {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+
+.dialect-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.dialect-btn:hover:not(.active):not(:disabled) {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.95);
+    transform: scale(1.02);
+}
+
+.dialect-btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.dialect-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.dialect-btn.active {
+    background: var(--dialect-color, #6366f1);
+    border-color: var(--dialect-color, #6366f1);
+    color: white;
+    box-shadow: 0 0 20px color-mix(in srgb, var(--dialect-color, #6366f1) 40%, transparent);
+}
+
+.dialect-flag {
+    font-size: 1.1rem;
+}
+
+.dialect-code {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Active Glow Effect */
+.active-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    animation: glow-pulse 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes glow-pulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* ========================================
+   INFO & COMPARISON TOGGLES
+   ======================================== */
+
+.info-toggle,
+.comparison-toggle {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.info-toggle:hover,
+.comparison-toggle:hover {
+    background: rgba(99, 102, 241, 0.3);
+    border-color: rgba(99, 102, 241, 0.5);
+    transform: scale(1.1);
+}
+
+.comparison-toggle.active {
+    background: #6366f1;
+    border-color: #6366f1;
+}
+
+/* ========================================
+   INFO PANEL
+   ======================================== */
+
+.info-panel {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    width: 280px;
+    background: rgba(30, 30, 63, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 16px;
+    padding: 16px;
+    z-index: 100;
+    animation: slideDown 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.info-flag {
+    font-size: 2.5rem;
+}
+
+.info-title h4 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.info-subtitle {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.info-description {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.info-features h5 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 8px;
+}
+
+.info-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+.info-features li {
+    padding: 4px 0 4px 16px;
+    position: relative;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.info-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+}
+
+.info-difference {
+    padding: 10px;
+    background: rgba(99, 102, 241, 0.15);
+    border-radius: 10px;
+}
+
+.difference-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #818cf8;
+}
+
+.info-difference p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 4px;
+}
+
+/* ========================================
+   COMPARISON PANEL
+   ======================================== */
+
+.comparison-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background: rgba(30, 30, 63, 0.98);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 20px;
+    padding: 24px;
+    z-index: 200;
+    animation: fadeIn 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.comparison-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comparison-header h4 {
+    font-size: 1.2rem;
+}
+
+.close-comparison {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.close-comparison:hover {
+    background: #ef4444;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.comparison-card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.comparison-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 2px solid;
+}
+
+.comparison-flag {
+    font-size: 1.5rem;
+}
+
+.comparison-code {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.comparison-content {
+    padding: 12px;
+}
+
+.comparison-content p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8px;
+}
+
+.comparison-content strong {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.comparison-example {
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.comparison-example h5 {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: #818cf8;
+}
+
+.example-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.example-item {
+    text-align: center;
+}
+
+.example-label {
+    display: block;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 4px;
+}
+
+.example-item code {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    color: #818cf8;
+}
+
+/* ========================================
+   TRANSITION OVERLAY
+   ======================================== */
+
+.transition-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 15, 35, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    animation: overlayFadeIn 0.3s ease;
+}
+
+@keyframes overlayFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.transition-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.transition-flag {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    animation: flagBounce 0.8s ease infinite alternate;
+    filter: drop-shadow(0 0 30px var(--dialect-color, #6366f1));
+}
+
+@keyframes flagBounce {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.transition-title {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.transition-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+}
+
+.transition-progress {
+    width: 300px;
+    max-width: 80vw;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0 auto 16px;
+}
+
+.transition-progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.15s ease;
+}
+
+.transition-hint {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .dialect-buttons {
+        gap: 2px;
+        padding: 3px;
+    }
+
+    .dialect-btn {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .dialect-flag {
+        font-size: 1rem;
+    }
+
+    .info-panel {
+        width: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .example-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .transition-flag {
+        font-size: 4rem;
+    }
+
+    .transition-title {
+        font-size: 1.4rem;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+.dialect-btn:focus-visible {
+    outline: 2px solid #818cf8;
+    outline-offset: 2px;
+}
+
+.info-toggle:focus-visible,
+.comparison-toggle:focus-visible {
+    outline: 2px solid #818cf8;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .active-glow,
+    .transition-flag {
+        animation: none;
+    }
+
+    .dialect-btn,
+    .info-toggle,
+    .comparison-toggle {
+        transition: none;
+    }
+}

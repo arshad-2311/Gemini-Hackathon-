@@ -1,0 +1,1656 @@
+{
+    "version": "1.0",
+    "format": "mediapipe",
+    "description": "Verified ASL signs with MediaPipe landmark keyframes",
+    "signs": {
+        "HELLO": {
+            "gloss": "HELLO",
+            "description": "Open hand moves from forehead outward like a salute",
+            "duration_ms": 800,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.15,
+                            0.85,
+                            0.3
+                        ],
+                        "landmarks": [
+                            [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.03,
+                                0.02,
+                                0.01
+                            ],
+                            [
+                                0.05,
+                                0.04,
+                                0.02
+                            ],
+                            [
+                                0.06,
+                                0.06,
+                                0.03
+                            ],
+                            [
+                                0.07,
+                                0.08,
+                                0.04
+                            ],
+                            [
+                                0.04,
+                                0.08,
+                                0.01
+                            ],
+                            [
+                                0.05,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.05,
+                                0.14,
+                                0.0
+                            ],
+                            [
+                                0.05,
+                                0.16,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.08,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.15,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.17,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.08,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.14,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.16,
+                                0.0
+                            ],
+                            [
+                                -0.02,
+                                0.07,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.10,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.12,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.14,
+                                0.01
+                            ]
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 400,
+                    "right_hand": {
+                        "position": [
+                            0.35,
+                            0.85,
+                            0.5
+                        ],
+                        "landmarks": [
+                            [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.03,
+                                0.02,
+                                0.01
+                            ],
+                            [
+                                0.05,
+                                0.04,
+                                0.02
+                            ],
+                            [
+                                0.06,
+                                0.06,
+                                0.03
+                            ],
+                            [
+                                0.07,
+                                0.08,
+                                0.04
+                            ],
+                            [
+                                0.04,
+                                0.08,
+                                0.01
+                            ],
+                            [
+                                0.05,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.05,
+                                0.14,
+                                0.0
+                            ],
+                            [
+                                0.05,
+                                0.16,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.08,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.15,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.17,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.08,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.14,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.16,
+                                0.0
+                            ],
+                            [
+                                -0.02,
+                                0.07,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.10,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.12,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.14,
+                                0.01
+                            ]
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "smile",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 800,
+                    "right_hand": {
+                        "position": [
+                            0.5,
+                            0.75,
+                            0.6
+                        ],
+                        "landmarks": [
+                            [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.03,
+                                0.02,
+                                0.01
+                            ],
+                            [
+                                0.05,
+                                0.04,
+                                0.02
+                            ],
+                            [
+                                0.06,
+                                0.06,
+                                0.03
+                            ],
+                            [
+                                0.07,
+                                0.08,
+                                0.04
+                            ],
+                            [
+                                0.04,
+                                0.08,
+                                0.01
+                            ],
+                            [
+                                0.05,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.05,
+                                0.14,
+                                0.0
+                            ],
+                            [
+                                0.05,
+                                0.16,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.08,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.15,
+                                0.0
+                            ],
+                            [
+                                0.02,
+                                0.17,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.08,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.12,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.14,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.16,
+                                0.0
+                            ],
+                            [
+                                -0.02,
+                                0.07,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.10,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.12,
+                                0.01
+                            ],
+                            [
+                                -0.03,
+                                0.14,
+                                0.01
+                            ]
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "smile",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Wave-like salute motion from forehead"
+        },
+        "THANK-YOU": {
+            "gloss": "THANK-YOU",
+            "description": "Flat hand touches chin and moves forward",
+            "duration_ms": 700,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.9,
+                            0.2
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "smile",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 350,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.75,
+                            0.5
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "smile",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 700,
+                    "right_hand": {
+                        "position": [
+                            0.1,
+                            0.65,
+                            0.7
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "smile",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Tips of fingers touch chin then arc forward"
+        },
+        "PLEASE": {
+            "gloss": "PLEASE",
+            "description": "Open hand circles on chest",
+            "duration_ms": 900,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.6,
+                            0.15
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "polite",
+                        "eyebrows": "slightly_raised"
+                    }
+                },
+                {
+                    "time_ms": 300,
+                    "right_hand": {
+                        "position": [
+                            0.1,
+                            0.55,
+                            0.15
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "polite",
+                        "eyebrows": "slightly_raised"
+                    }
+                },
+                {
+                    "time_ms": 600,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.15
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "polite",
+                        "eyebrows": "slightly_raised"
+                    }
+                },
+                {
+                    "time_ms": 900,
+                    "right_hand": {
+                        "position": [
+                            -0.05,
+                            0.55,
+                            0.15
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "polite",
+                        "eyebrows": "slightly_raised"
+                    }
+                }
+            ],
+            "notes": "Circular rubbing motion on chest"
+        },
+        "YES": {
+            "gloss": "YES",
+            "description": "Fist nods up and down like a head nodding",
+            "duration_ms": 600,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "S",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "affirmative",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 200,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.6,
+                            0.45
+                        ],
+                        "handshape": "S",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "affirmative",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 400,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "S",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "affirmative",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 600,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.6,
+                            0.45
+                        ],
+                        "handshape": "S",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "affirmative",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Wrist bends to make fist nod"
+        },
+        "NO": {
+            "gloss": "NO",
+            "description": "Index and middle finger snap closed on thumb",
+            "duration_ms": 500,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.75,
+                            0.5
+                        ],
+                        "handshape": "U",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "negative",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 250,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.75,
+                            0.5
+                        ],
+                        "handshape": "N",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "negative",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 500,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.75,
+                            0.5
+                        ],
+                        "handshape": "flat_O",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "negative",
+                        "eyebrows": "furrowed"
+                    }
+                }
+            ],
+            "notes": "Quick snap of fingers to thumb, often with head shake"
+        },
+        "I-LOVE-YOU": {
+            "gloss": "I-LOVE-YOU",
+            "description": "ILY handshape held out",
+            "duration_ms": 1000,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.3,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "ILY",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "warm_smile",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 500,
+                    "right_hand": {
+                        "position": [
+                            0.35,
+                            0.72,
+                            0.5
+                        ],
+                        "handshape": "ILY",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "warm_smile",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 1000,
+                    "right_hand": {
+                        "position": [
+                            0.3,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "ILY",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "warm_smile",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Pinky, index, and thumb extended (I + L + Y combined)"
+        },
+        "GOOD": {
+            "gloss": "GOOD",
+            "description": "Flat hand from chin moves down to palm of other hand",
+            "duration_ms": 600,
+            "handedness": "both",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.85,
+                            0.2
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.3
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "positive",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 600,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.35
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "down"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.3
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "positive",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Right hand lands on left palm"
+        },
+        "BAD": {
+            "gloss": "BAD",
+            "description": "Flat hand from chin flips down",
+            "duration_ms": 500,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.85,
+                            0.15
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "negative",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 500,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "down"
+                    },
+                    "face": {
+                        "expression": "negative",
+                        "eyebrows": "furrowed"
+                    }
+                }
+            ],
+            "notes": "Hand flips from palm-in at chin to palm-down"
+        },
+        "HELP": {
+            "gloss": "HELP",
+            "description": "Fist on flat palm, both move up",
+            "duration_ms": 700,
+            "handedness": "both",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.3
+                        ],
+                        "handshape": "A",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.45,
+                            0.3
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 700,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "A",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.65,
+                            0.4
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Thumbs-up fist rests on flat palm, both rise together"
+        },
+        "SORRY": {
+            "gloss": "SORRY",
+            "description": "Fist circles on chest",
+            "duration_ms": 800,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.6,
+                            0.15
+                        ],
+                        "handshape": "A",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "apologetic",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 400,
+                    "right_hand": {
+                        "position": [
+                            0.1,
+                            0.55,
+                            0.15
+                        ],
+                        "handshape": "A",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "apologetic",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 800,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.6,
+                            0.15
+                        ],
+                        "handshape": "A",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "apologetic",
+                        "eyebrows": "furrowed"
+                    }
+                }
+            ],
+            "notes": "Circular motion with A-hand on chest"
+        },
+        "NAME": {
+            "gloss": "NAME",
+            "description": "Two H-hands tap together",
+            "duration_ms": 600,
+            "handedness": "both",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.1,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "H",
+                        "palm_orientation": "down"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.1,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "H",
+                        "palm_orientation": "down"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 300,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "H",
+                        "palm_orientation": "down"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "H",
+                        "palm_orientation": "down"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 600,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "H",
+                        "palm_orientation": "down"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.7,
+                            0.4
+                        ],
+                        "handshape": "H",
+                        "palm_orientation": "down"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Index fingers tap twice"
+        },
+        "ME": {
+            "gloss": "ME",
+            "description": "Index finger points to chest",
+            "duration_ms": 400,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.6,
+                            0.2
+                        ],
+                        "handshape": "1",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 400,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.55,
+                            0.1
+                        ],
+                        "handshape": "1",
+                        "palm_orientation": "left"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Point to self"
+        },
+        "YOU": {
+            "gloss": "YOU",
+            "description": "Index finger points forward",
+            "duration_ms": 400,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.7,
+                            0.3
+                        ],
+                        "handshape": "1",
+                        "palm_orientation": "down"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 400,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.7,
+                            0.6
+                        ],
+                        "handshape": "1",
+                        "palm_orientation": "down"
+                    },
+                    "face": {
+                        "expression": "neutral",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Point forward to addressee"
+        },
+        "WHAT": {
+            "gloss": "WHAT",
+            "description": "Open hands shake side to side, palms up",
+            "duration_ms": 600,
+            "handedness": "both",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "5",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.2,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "5",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "questioning",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 300,
+                    "right_hand": {
+                        "position": [
+                            0.15,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "5",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.15,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "5",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "questioning",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 600,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "5",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.2,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "5",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "questioning",
+                        "eyebrows": "furrowed"
+                    }
+                }
+            ],
+            "notes": "WH-question requires furrowed eyebrows"
+        },
+        "WHERE": {
+            "gloss": "WHERE",
+            "description": "Index finger wags side to side",
+            "duration_ms": 500,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.15,
+                            0.7,
+                            0.5
+                        ],
+                        "handshape": "1",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "questioning",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 250,
+                    "right_hand": {
+                        "position": [
+                            -0.1,
+                            0.7,
+                            0.5
+                        ],
+                        "handshape": "1",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "questioning",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 500,
+                    "right_hand": {
+                        "position": [
+                            0.1,
+                            0.7,
+                            0.5
+                        ],
+                        "handshape": "1",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "questioning",
+                        "eyebrows": "furrowed"
+                    }
+                }
+            ],
+            "notes": "WH-question requires furrowed eyebrows"
+        },
+        "HOW": {
+            "gloss": "HOW",
+            "description": "Knuckles together, palms down, twist to palms up",
+            "duration_ms": 600,
+            "handedness": "both",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.05,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "bent",
+                        "palm_orientation": "down"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.05,
+                            0.6,
+                            0.4
+                        ],
+                        "handshape": "bent",
+                        "palm_orientation": "down"
+                    },
+                    "face": {
+                        "expression": "questioning",
+                        "eyebrows": "furrowed"
+                    }
+                },
+                {
+                    "time_ms": 600,
+                    "right_hand": {
+                        "position": [
+                            0.15,
+                            0.65,
+                            0.5
+                        ],
+                        "handshape": "bent",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.15,
+                            0.65,
+                            0.5
+                        ],
+                        "handshape": "bent",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "questioning",
+                        "eyebrows": "furrowed"
+                    }
+                }
+            ],
+            "notes": "Twist wrists outward, end palms up"
+        },
+        "WANT": {
+            "gloss": "WANT",
+            "description": "Open claw hands pull toward body",
+            "duration_ms": 600,
+            "handedness": "both",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.6,
+                            0.6
+                        ],
+                        "handshape": "claw",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.2,
+                            0.6,
+                            0.6
+                        ],
+                        "handshape": "claw",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "eager",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 600,
+                    "right_hand": {
+                        "position": [
+                            0.15,
+                            0.55,
+                            0.3
+                        ],
+                        "handshape": "claw",
+                        "palm_orientation": "up"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.15,
+                            0.55,
+                            0.3
+                        ],
+                        "handshape": "claw",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "eager",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Hands pull toward signer"
+        },
+        "NEED": {
+            "gloss": "NEED",
+            "description": "X-hand bends down at wrist",
+            "duration_ms": 500,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.7,
+                            0.5
+                        ],
+                        "handshape": "X",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "serious",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 250,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.6,
+                            0.5
+                        ],
+                        "handshape": "X",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "serious",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 500,
+                    "right_hand": {
+                        "position": [
+                            0.2,
+                            0.7,
+                            0.5
+                        ],
+                        "handshape": "X",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "serious",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Wrist bends to make X-hand nod"
+        },
+        "UNDERSTAND": {
+            "gloss": "UNDERSTAND",
+            "description": "Index finger flicks up near forehead",
+            "duration_ms": 500,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.15,
+                            0.9,
+                            0.2
+                        ],
+                        "handshape": "S",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "realization",
+                        "eyebrows": "raised"
+                    }
+                },
+                {
+                    "time_ms": 500,
+                    "right_hand": {
+                        "position": [
+                            0.15,
+                            0.95,
+                            0.25
+                        ],
+                        "handshape": "1",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "realization",
+                        "eyebrows": "raised"
+                    }
+                }
+            ],
+            "notes": "Index finger springs up like a lightbulb moment"
+        },
+        "KNOW": {
+            "gloss": "KNOW",
+            "description": "Fingertips tap side of forehead",
+            "duration_ms": 500,
+            "handedness": "dominant",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.12,
+                            0.92,
+                            0.15
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "knowing",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 250,
+                    "right_hand": {
+                        "position": [
+                            0.12,
+                            0.92,
+                            0.12
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "knowing",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 500,
+                    "right_hand": {
+                        "position": [
+                            0.12,
+                            0.92,
+                            0.18
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "body"
+                    },
+                    "face": {
+                        "expression": "knowing",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Tap temple area twice"
+        },
+        "LEARN": {
+            "gloss": "LEARN",
+            "description": "Grab info from palm and put to forehead",
+            "duration_ms": 700,
+            "handedness": "both",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.4
+                        ],
+                        "handshape": "5",
+                        "palm_orientation": "down"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.35
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "focused",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 350,
+                    "right_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.35
+                        ],
+                        "handshape": "flat_O",
+                        "palm_orientation": "down"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.35
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "focused",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 700,
+                    "right_hand": {
+                        "position": [
+                            0.1,
+                            0.9,
+                            0.15
+                        ],
+                        "handshape": "flat_O",
+                        "palm_orientation": "body"
+                    },
+                    "left_hand": {
+                        "position": [
+                            0.0,
+                            0.5,
+                            0.35
+                        ],
+                        "handshape": "B",
+                        "palm_orientation": "up"
+                    },
+                    "face": {
+                        "expression": "focused",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Pick up from palm, bring to forehead"
+        },
+        "TEACH": {
+            "gloss": "TEACH",
+            "description": "Both flat-O hands move forward from temples",
+            "duration_ms": 700,
+            "handedness": "both",
+            "keyframes": [
+                {
+                    "time_ms": 0,
+                    "right_hand": {
+                        "position": [
+                            0.12,
+                            0.9,
+                            0.2
+                        ],
+                        "handshape": "flat_O",
+                        "palm_orientation": "forward"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.12,
+                            0.9,
+                            0.2
+                        ],
+                        "handshape": "flat_O",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "teaching",
+                        "eyebrows": "neutral"
+                    }
+                },
+                {
+                    "time_ms": 700,
+                    "right_hand": {
+                        "position": [
+                            0.15,
+                            0.85,
+                            0.5
+                        ],
+                        "handshape": "flat_O",
+                        "palm_orientation": "forward"
+                    },
+                    "left_hand": {
+                        "position": [
+                            -0.15,
+                            0.85,
+                            0.5
+                        ],
+                        "handshape": "flat_O",
+                        "palm_orientation": "forward"
+                    },
+                    "face": {
+                        "expression": "teaching",
+                        "eyebrows": "neutral"
+                    }
+                }
+            ],
+            "notes": "Hands move outward from temples, sharing knowledge"
+        }
+    },
+    "handshapes": {
+        "A": "Fist with thumb alongside",
+        "B": "Flat hand, fingers together",
+        "S": "Fist with thumb over fingers",
+        "1": "Index finger extended (pointing)",
+        "5": "All fingers spread open",
+        "H": "Index and middle extended together",
+        "U": "Index and middle extended (like peace sign)",
+        "N": "Index and middle on thumb",
+        "X": "Index finger bent/hooked",
+        "ILY": "Thumb, index, and pinky extended",
+        "claw": "All fingers curved/clawed",
+        "bent": "All fingers bent at knuckles",
+        "flat_O": "Fingertips touching thumb"
+    }
+}

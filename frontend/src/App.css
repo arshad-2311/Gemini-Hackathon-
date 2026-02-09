@@ -1,0 +1,1234 @@
+/* ========================================
+   Sign Language Translator - Comprehensive Styles
+   ======================================== */
+
+/* ========================================
+   CSS CUSTOM PROPERTIES
+   ======================================== */
+:root {
+  /* Colors */
+  --primary: #667eea;
+  --primary-dark: #5a67d8;
+  --secondary: #764ba2;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+
+  /* Background */
+  --bg-gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  --bg-dark: #0f172a;
+  --bg-overlay: rgba(15, 23, 42, 0.9);
+
+  /* Glass morphism */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-bg-dark: rgba(0, 0, 0, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-border-light: rgba(255, 255, 255, 0.3);
+  --glass-blur: blur(10px);
+
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.8);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-dim: rgba(255, 255, 255, 0.4);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 30px rgba(102, 126, 234, 0.4);
+  --shadow-glow-accent: 0 0 20px rgba(245, 158, 11, 0.4);
+
+  /* Sizing */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Z-index layers */
+  --z-avatar: 1;
+  --z-spatial: 10;
+  --z-controls: 20;
+  --z-panels: 30;
+  --z-overlay: 50;
+  --z-modal: 100;
+  --z-toast: 200;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Layout */
+  --panel-width: 350px;
+  --camera-width: 240px;
+  --camera-height: 180px;
+  --transcript-height: 120px;
+  --mic-size: 80px;
+}
+
+/* ========================================
+   RESET & BASE
+   ======================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+/* Sign Language Glosses */
+code,
+.sign-gloss,
+.gloss {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+  font-weight: 600;
+  background: rgba(102, 126, 234, 0.2);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--primary);
+}
+
+/* ========================================
+   KEYFRAME ANIMATIONS
+   ======================================== */
+
+/* Pulse */
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade Out */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Slide In Left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Slide Out Left */
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Slide In Right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Slide In Up */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide In Down */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bounce */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Spin */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Glow Pulse */
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(102, 126, 234, 0.6);
+  }
+}
+
+/* Recording Pulse */
+@keyframes recordPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 20px rgba(239, 68, 68, 0);
+  }
+}
+
+/* Ripple */
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* ========================================
+   MAIN APP LAYOUT
+   ======================================== */
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Avatar Container - Full Screen */
+.avatar-container {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-avatar);
+}
+
+.avatar-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* ========================================
+   CONNECTION INDICATOR
+   ======================================== */
+.connection-indicator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
+  z-index: var(--z-controls);
+  animation: slideInDown 0.3s ease;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.connection-indicator.connected .status-dot {
+  background: var(--success);
+  box-shadow: 0 0 10px var(--success);
+  animation: pulse 2s infinite;
+}
+
+.connection-indicator.disconnected .status-dot {
+  background: var(--danger);
+  box-shadow: 0 0 10px var(--danger);
+}
+
+/* ========================================
+   CONTROLS OVERLAY
+   ======================================== */
+.controls-overlay {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: var(--z-controls);
+  max-width: 320px;
+}
+
+.control-group {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 2px solid var(--glass-border-light);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  animation: slideInLeft 0.3s ease;
+}
+
+.control-group label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* ========================================
+   DIALECT SWITCHER
+   ======================================== */
+.dialect-switcher {
+  display: flex;
+  gap: 6px;
+}
+
+.dialect-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 16px;
+  background: var(--glass-bg-dark);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.dialect-btn:hover {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: var(--glass-border);
+  transform: translateY(-2px);
+}
+
+.dialect-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-color: var(--primary);
+  color: var(--text-primary);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-glow);
+}
+
+.dialect-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   MICROPHONE BUTTON
+   ======================================== */
+.mic-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: var(--mic-size);
+  height: var(--mic-size);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border: none;
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.mic-button:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.mic-button:active {
+  transform: scale(0.95);
+}
+
+.mic-button.active {
+  background: linear-gradient(135deg, var(--danger), #dc2626);
+  animation: recordPulse 1.5s infinite;
+}
+
+.mic-button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* Extended Mic Button with text */
+.mic-button.with-text {
+  width: auto;
+  padding: 0 24px;
+  border-radius: var(--radius-full);
+  height: 56px;
+}
+
+.mic-button .mic-icon {
+  font-size: 1.5rem;
+}
+
+.mic-button .mic-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ========================================
+   QUICK PHRASES
+   ======================================== */
+.quick-phrases {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 2px solid var(--glass-border-light);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.quick-phrases label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.phrase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.phrase-btn {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg-dark);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.phrase-btn:hover {
+  background: var(--primary);
+  transform: scale(1.1);
+  box-shadow: var(--shadow-glow);
+}
+
+.phrase-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   TEACHING PANEL (Left Sidebar)
+   ======================================== */
+.teaching-panel-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--panel-width);
+  height: 100vh;
+  background: var(--bg-overlay);
+  backdrop-filter: var(--glass-blur);
+  border-right: 1px solid var(--glass-border);
+  z-index: var(--z-panels);
+  transform: translateX(-100%);
+  transition: transform var(--transition-normal);
+  overflow: hidden;
+}
+
+.teaching-panel-container.open {
+  transform: translateX(0);
+  animation: slideInLeft 0.3s ease;
+}
+
+.panel-toggle {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 80px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-left: none;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.panel-toggle:hover {
+  background: var(--primary);
+  color: var(--text-primary);
+}
+
+.teaching-panel {
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* ========================================
+   TRANSCRIPT DISPLAY (Bottom)
+   ======================================== */
+.transcript-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: var(--transcript-height);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7) 60%, transparent);
+  padding: 40px 20px 20px;
+  z-index: var(--z-controls);
+  pointer-events: none;
+}
+
+.transcript-content {
+  max-width: 900px;
+  margin: 0 auto;
+  max-height: 80px;
+  overflow-y: auto;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  white-space: pre-line;
+  pointer-events: auto;
+  animation: slideInUp 0.3s ease;
+}
+
+.transcript-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.transcript-content::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 2px;
+}
+
+.transcript-content .interim {
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.speaking-indicator {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--success);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  animation: bounce 0.8s infinite;
+}
+
+/* ========================================
+   CAMERA FEED (Bottom Right)
+   ======================================== */
+.camera-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: var(--camera-width);
+  height: var(--camera-height);
+  background: var(--bg-dark);
+  border: 3px solid white;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  z-index: var(--z-controls);
+  box-shadow: var(--shadow-lg);
+  animation: slideInRight 0.3s ease;
+}
+
+.camera-container video,
+.camera-container canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.camera-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.camera-placeholder .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+/* Objects Overlay on Camera */
+.objects-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.object-marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.object-dot {
+  width: 16px;
+  height: 16px;
+  background: var(--success);
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--success);
+  animation: pulse 1.5s infinite;
+}
+
+.object-label {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 8px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+/* ========================================
+   ERROR TOAST
+   ======================================== */
+.error-toast {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, var(--danger), #b91c1c);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-toast);
+  animation: slideInDown 0.3s ease;
+}
+
+.error-toast .error-message {
+  color: white;
+  font-weight: 500;
+}
+
+.error-toast button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.error-toast button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   SUGGESTIONS BAR
+   ======================================== */
+.suggestions-bar {
+  position: fixed;
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  z-index: var(--z-controls);
+  animation: slideInUp 0.3s ease;
+}
+
+.suggestions-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.suggestion-btn {
+  padding: 8px 16px;
+  background: rgba(102, 126, 234, 0.2);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-full);
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.suggestion-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   MODE TOGGLES
+   ======================================== */
+.mode-toggles {
+  display: flex;
+  gap: 8px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 12px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mode-btn:hover {
+  background: rgba(102, 126, 234, 0.2);
+  color: var(--text-primary);
+}
+
+.mode-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.mode-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   FAB (Floating Action Button)
+   ======================================== */
+.fab-upload {
+  position: fixed;
+  bottom: 220px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border: none;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  z-index: var(--z-controls);
+  transition: all var(--transition-normal);
+}
+
+.fab-upload:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(102, 126, 234, 0.5);
+}
+
+.fab-upload:active {
+  transform: scale(0.95);
+}
+
+.fab-upload:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* ========================================
+   MODAL OVERLAY
+   ======================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 600px;
+  max-height: 85vh;
+  background: var(--bg-overlay);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  animation: slideInUp 0.3s ease;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.modal-close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg);
+  border: none;
+  border-radius: 50%;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.modal-close:hover {
+  background: var(--danger);
+  color: white;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(85vh - 80px);
+}
+
+/* ========================================
+   LOADING SPINNER
+   ======================================== */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--glass-border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.spinner.small {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+}
+
+/* ========================================
+   BUTTONS - General Styles
+   ======================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-secondary {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--glass-border) transparent;
+}
+
+/* ========================================
+   RESPONSIVE - Tablet (768px)
+   ======================================== */
+@media (max-width: 1024px) {
+  :root {
+    --panel-width: 300px;
+    --camera-width: 200px;
+    --camera-height: 150px;
+    --mic-size: 70px;
+  }
+
+  .controls-overlay {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --panel-width: 100%;
+    --camera-width: 140px;
+    --camera-height: 105px;
+    --mic-size: 60px;
+    --transcript-height: 100px;
+  }
+
+  .controls-overlay {
+    top: auto;
+    bottom: 160px;
+    left: 10px;
+    right: 10px;
+    max-width: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .control-group {
+    flex: 1 1 auto;
+    min-width: 140px;
+  }
+
+  .teaching-panel-container {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60vh;
+    width: 100%;
+    transform: translateY(100%);
+    border-right: none;
+    border-top: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  .teaching-panel-container.open {
+    transform: translateY(0);
+  }
+
+  .panel-toggle {
+    top: -40px;
+    right: 50%;
+    transform: translateX(50%) rotate(-90deg);
+    width: 80px;
+    height: 40px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    border-bottom: none;
+  }
+
+  .camera-container {
+    bottom: 160px;
+    right: 10px;
+  }
+
+  .fab-upload {
+    bottom: 280px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .suggestions-bar {
+    bottom: 160px;
+    left: 10px;
+    right: 90px;
+    transform: none;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus Visible for all interactive elements */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --glass-bg: rgba(0, 0, 0, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.8);
+  }
+
+  .dialect-btn,
+  .phrase-btn,
+  .mode-btn,
+  .suggestion-btn {
+    border-width: 2px;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+
+  .controls-overlay,
+  .camera-container,
+  .teaching-panel-container,
+  .connection-indicator,
+  .fab-upload,
+  .suggestions-bar {
+    display: none !important;
+  }
+
+  .app {
+    background: white;
+    color: black;
+  }
+}

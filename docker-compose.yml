@@ -1,0 +1,42 @@
+# ================================
+# SignBridge Docker Compose
+# Full-stack deployment
+# ================================
+
+version: '3.8'
+
+services:
+  # Backend API Server
+  backend:
+    build: ./backend
+    container_name: signbridge-backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PORT=3000
+      - CORS_ORIGIN=http://localhost
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Frontend (Nginx serving built React app)
+  frontend:
+    build: ./frontend
+    container_name: signbridge-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+# Networks
+networks:
+  default:
+    name: signbridge-network

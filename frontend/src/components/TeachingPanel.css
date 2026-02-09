@@ -1,0 +1,782 @@
+/* ========================================
+   Teaching Panel Styles
+   ======================================== */
+
+.teaching-panel {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-primary, #fff);
+}
+
+/* ========================================
+   TAB NAVIGATION
+   ======================================== */
+
+.panel-tabs {
+    display: flex;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 8px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tab-btn.active {
+    color: #6366f1;
+    border-bottom-color: #6366f1;
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.tab-icon {
+    font-size: 1.2rem;
+}
+
+.tab-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ========================================
+   PANEL CONTENT
+   ======================================== */
+
+.panel-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.tab-content h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tab-content h4 {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tab-content section {
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   PRACTICE TAB
+   ======================================== */
+
+.current-sign {
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.sign-display {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.sign-gloss {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #818cf8;
+    margin-bottom: 4px;
+}
+
+.sign-meaning {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.recording-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.record-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.record-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4);
+}
+
+.record-icon {
+    font-size: 1.2rem;
+    animation: pulse-dot 1s infinite;
+}
+
+@keyframes pulse-dot {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.recording-progress {
+    position: relative;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #ef4444, #f59e0b);
+    transition: width 0.1s linear;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    color: white;
+    z-index: 1;
+}
+
+.cancel-btn {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.no-sign-selected {
+    text-align: center;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Feedback Section */
+.accuracy-display {
+    text-align: center;
+    padding: 16px;
+}
+
+.accuracy-circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 12px;
+    transform: rotate(-90deg);
+}
+
+.accuracy-bg {
+    stroke: rgba(255, 255, 255, 0.1);
+}
+
+.accuracy-fill {
+    stroke: var(--accuracy-color, #10b981);
+    transition: stroke-dasharray 0.5s ease;
+}
+
+.accuracy-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    fill: white;
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+.accuracy-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.corrections-list {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.corrections-list h4 {
+    margin-bottom: 10px;
+}
+
+.correction-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.correction-item:last-child {
+    margin-bottom: 0;
+}
+
+.correction-icon {
+    flex-shrink: 0;
+}
+
+.correction-content strong {
+    display: block;
+    font-size: 0.85rem;
+    color: #f59e0b;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+
+.correction-content p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.cultural-note,
+.encouragement {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cultural-note .note-icon,
+.encouragement .encouragement-icon {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
+
+.cultural-note p,
+.encouragement p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+/* Queue Section */
+.queue-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.queue-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.queue-item:hover,
+.queue-item.active {
+    background: rgba(99, 102, 241, 0.2);
+}
+
+.queue-number {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(99, 102, 241, 0.3);
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
+
+.queue-gloss {
+    flex: 1;
+    font-weight: 500;
+}
+
+.queue-remove {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.queue-remove:hover {
+    color: #ef4444;
+}
+
+/* Sign Library */
+.sign-category {
+    margin-bottom: 16px;
+}
+
+.category-header {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.category-header.beginner {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+.category-header.intermediate {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+}
+
+.category-header.advanced {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.sign-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+.sign-btn {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.sign-btn:hover {
+    background: rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.5);
+}
+
+.sign-btn.active {
+    background: #6366f1;
+    color: white;
+}
+
+/* ========================================
+   SUGGESTIONS TAB
+   ======================================== */
+
+.suggestions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.refresh-btn {
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.refresh-btn:hover {
+    background: rgba(99, 102, 241, 0.3);
+}
+
+.suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.suggestion-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.suggestion-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.suggestion-gloss {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #818cf8;
+}
+
+.suggestion-meaning {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.suggestion-reason {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.suggestion-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.difficulty {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.difficulty.beginner {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+.difficulty.intermediate {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+}
+
+.difficulty.advanced {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.likelihood {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.suggestion-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.suggestion-actions button {
+    flex: 1;
+    padding: 8px;
+    background: rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    border-radius: 6px;
+    color: #818cf8;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.suggestion-actions button:hover {
+    background: #6366f1;
+    color: white;
+}
+
+.no-suggestions {
+    text-align: center;
+    padding: 40px 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.empty-icon {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.no-suggestions button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: #6366f1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ========================================
+   PROGRESS TAB
+   ======================================== */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+.stat-card.streak {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(239, 68, 68, 0.2));
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #818cf8;
+    margin-bottom: 4px;
+}
+
+.stat-card.streak .stat-value {
+    color: #f59e0b;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.achievement-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.achievement-card.locked {
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+
+.achievement-card.unlocked {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
+    border: 1px solid rgba(99, 102, 241, 0.4);
+}
+
+.achievement-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.achievement-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.achievement-desc {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.best-signs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.best-sign-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.best-sign-gloss {
+    font-weight: 600;
+}
+
+.best-sign-stats {
+    display: flex;
+    gap: 12px;
+}
+
+.best-accuracy {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.practice-count {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+/* ========================================
+   REFERENCE TAB
+   ======================================== */
+
+.reference-note {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 12px;
+}
+
+.fingerspelling-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.letter-btn {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.letter-btn:hover {
+    background: #6366f1;
+    transform: scale(1.1);
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.number-btn {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.number-btn:hover {
+    background: #10b981;
+    transform: scale(1.1);
+}
+
+.phrases-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.phrase-item {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.phrase-item:hover {
+    background: rgba(99, 102, 241, 0.2);
+}
+
+.phrase-sign {
+    font-weight: 600;
+    color: #818cf8;
+    margin-bottom: 4px;
+}
+
+.phrase-meaning {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========================================
+   DIALECT BADGE
+   ======================================== */
+
+.dialect-badge {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    padding: 4px 10px;
+    background: rgba(99, 102, 241, 0.3);
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #818cf8;
+}

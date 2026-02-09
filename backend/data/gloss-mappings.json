@@ -1,0 +1,235 @@
+{
+    "version": "1.0",
+    "description": "English to ASL gloss mappings for accurate translation",
+    "mappings": {
+        "hello": [
+            "HELLO"
+        ],
+        "hi": [
+            "HELLO"
+        ],
+        "hey": [
+            "HELLO"
+        ],
+        "goodbye": [
+            "GOODBYE"
+        ],
+        "bye": [
+            "GOODBYE"
+        ],
+        "see you": [
+            "SEE",
+            "YOU"
+        ],
+        "thank you": [
+            "THANK-YOU"
+        ],
+        "thanks": [
+            "THANK-YOU"
+        ],
+        "please": [
+            "PLEASE"
+        ],
+        "yes": [
+            "YES"
+        ],
+        "yeah": [
+            "YES"
+        ],
+        "no": [
+            "NO"
+        ],
+        "nope": [
+            "NO"
+        ],
+        "i love you": [
+            "I-LOVE-YOU"
+        ],
+        "love you": [
+            "I-LOVE-YOU"
+        ],
+        "good": [
+            "GOOD"
+        ],
+        "great": [
+            "GOOD"
+        ],
+        "bad": [
+            "BAD"
+        ],
+        "not good": [
+            "BAD"
+        ],
+        "help": [
+            "HELP"
+        ],
+        "help me": [
+            "HELP",
+            "ME"
+        ],
+        "sorry": [
+            "SORRY"
+        ],
+        "i'm sorry": [
+            "SORRY"
+        ],
+        "name": [
+            "NAME"
+        ],
+        "my name": [
+            "ME",
+            "NAME"
+        ],
+        "your name": [
+            "YOU",
+            "NAME"
+        ],
+        "what is your name": [
+            "YOU",
+            "NAME",
+            "WHAT"
+        ],
+        "me": [
+            "ME"
+        ],
+        "i": [
+            "ME"
+        ],
+        "you": [
+            "YOU"
+        ],
+        "what": [
+            "WHAT"
+        ],
+        "where": [
+            "WHERE"
+        ],
+        "how": [
+            "HOW"
+        ],
+        "how are you": [
+            "YOU",
+            "HOW"
+        ],
+        "want": [
+            "WANT"
+        ],
+        "i want": [
+            "ME",
+            "WANT"
+        ],
+        "need": [
+            "NEED"
+        ],
+        "i need": [
+            "ME",
+            "NEED"
+        ],
+        "understand": [
+            "UNDERSTAND"
+        ],
+        "i understand": [
+            "ME",
+            "UNDERSTAND"
+        ],
+        "know": [
+            "KNOW"
+        ],
+        "i know": [
+            "ME",
+            "KNOW"
+        ],
+        "don't know": [
+            "KNOW",
+            "NO"
+        ],
+        "learn": [
+            "LEARN"
+        ],
+        "teach": [
+            "TEACH"
+        ],
+        "teach me": [
+            "TEACH",
+            "ME"
+        ],
+        "nice to meet you": [
+            "NICE",
+            "MEET",
+            "YOU"
+        ],
+        "good morning": [
+            "GOOD",
+            "MORNING"
+        ],
+        "good night": [
+            "GOOD",
+            "NIGHT"
+        ]
+    },
+    "grammar_rules": {
+        "question_markers": {
+            "wh_questions": {
+                "position": "end",
+                "facial": "eyebrows_furrowed"
+            },
+            "yes_no_questions": {
+                "position": "end",
+                "facial": "eyebrows_raised"
+            }
+        },
+        "negation": {
+            "position": "after_verb",
+            "facial": "head_shake"
+        },
+        "topic_comment": {
+            "topic_position": "start",
+            "facial": "eyebrows_raised"
+        }
+    },
+    "word_order_transforms": [
+        {
+            "pattern": "what is your (\\w+)",
+            "asl_order": [
+                "YOU",
+                "$1",
+                "WHAT"
+            ],
+            "example": "what is your name → YOU NAME WHAT"
+        },
+        {
+            "pattern": "how are you",
+            "asl_order": [
+                "YOU",
+                "HOW"
+            ],
+            "example": "how are you → YOU HOW"
+        },
+        {
+            "pattern": "i am (\\w+)",
+            "asl_order": [
+                "ME",
+                "$1"
+            ],
+            "example": "i am happy → ME HAPPY"
+        },
+        {
+            "pattern": "do you (\\w+)",
+            "asl_order": [
+                "YOU",
+                "$1"
+            ],
+            "example": "do you understand → YOU UNDERSTAND"
+        },
+        {
+            "pattern": "can you (\\w+) me",
+            "asl_order": [
+                "YOU",
+                "$1",
+                "ME",
+                "CAN"
+            ],
+            "example": "can you help me → YOU HELP ME CAN"
+        }
+    ]
+}

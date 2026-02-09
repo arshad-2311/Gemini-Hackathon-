@@ -1,0 +1,335 @@
+/* frontend/src/SignMTDemo.css */
+/* Styles for the SignMT Demo page */
+
+.signmt-demo {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    padding: 20px;
+}
+
+/* Header */
+.demo-header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.demo-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    background: linear-gradient(135deg, #4ecdc4, #0099ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.demo-header .subtitle {
+    color: #888;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+/* Main Content Layout */
+.demo-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .demo-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Input Panel */
+.input-panel {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Language Selector */
+.language-selector,
+.output-selector {
+    margin-bottom: 20px;
+}
+
+.language-selector label,
+.output-selector label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4ecdc4;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.language-selector select {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: #4ecdc4;
+}
+
+/* Output Modes */
+.output-modes {
+    display: flex;
+    gap: 8px;
+}
+
+.output-modes .mode-btn {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    color: #aaa;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.output-modes .mode-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.output-modes .mode-btn.active {
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.2), rgba(0, 153, 255, 0.2));
+    border-color: #4ecdc4;
+    color: #4ecdc4;
+}
+
+/* Text Input */
+.text-input-area {
+    margin-bottom: 20px;
+}
+
+.text-input-area textarea {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+}
+
+.text-input-area textarea:focus {
+    outline: none;
+    border-color: #4ecdc4;
+    box-shadow: 0 0 20px rgba(78, 205, 196, 0.2);
+}
+
+.text-input-area textarea::placeholder {
+    color: #666;
+}
+
+.translate-btn {
+    width: 100%;
+    padding: 16px 24px;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #4ecdc4, #0099ff);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.translate-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(78, 205, 196, 0.3);
+}
+
+.translate-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Quick Phrases */
+.quick-phrases {
+    margin-top: 24px;
+}
+
+.quick-phrases h3 {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.phrase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.phrase-btn {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phrase-btn:hover:not(:disabled) {
+    background: rgba(78, 205, 196, 0.2);
+    border-color: #4ecdc4;
+}
+
+.phrase-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.phrase-icon {
+    font-size: 18px;
+}
+
+.phrase-text {
+    font-weight: 500;
+}
+
+/* Error Message */
+.error-message {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.5);
+    color: #ff6b6b;
+    font-size: 14px;
+}
+
+/* Avatar Panel */
+.avatar-panel {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Translation Details */
+.translation-details {
+    max-width: 1400px;
+    margin: 30px auto 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.translation-details h3 {
+    margin: 0 0 16px;
+    color: #4ecdc4;
+    font-size: 18px;
+}
+
+.details-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.detail-label {
+    color: #888;
+    font-size: 14px;
+}
+
+.detail-value {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* SiGML Preview */
+.sigml-preview {
+    margin-top: 20px;
+}
+
+.sigml-preview summary {
+    cursor: pointer;
+    color: #888;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.sigml-preview summary:hover {
+    color: #4ecdc4;
+}
+
+.sigml-preview pre {
+    margin-top: 12px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 12px;
+    color: #4ecdc4;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Footer */
+.demo-footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.demo-footer small {
+    color: #555;
+}

@@ -1,0 +1,410 @@
+{
+    "_meta": {
+        "generatedAt": "2026-01-28T00:00:00.000Z",
+        "totalSigns": 30,
+        "dialects": {
+            "ASL": 15,
+            "BSL": 8,
+            "ISL": 7
+        },
+        "note": "Sample index - replace with real data after processing SignAvatars dataset"
+    },
+    "ASL": {
+        "HELLO": {
+            "videoPath": "dataset/processed/asl/hello_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/hello.jpg",
+            "duration": 2.0,
+            "variants": {
+                "1080p": "dataset/processed/asl/hello_1080p.mp4",
+                "720p": "dataset/processed/asl/hello_720p.mp4",
+                "480p": "dataset/processed/asl/hello_480p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "greetings"
+            }
+        },
+        "GOODBYE": {
+            "videoPath": "dataset/processed/asl/goodbye_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/goodbye.jpg",
+            "duration": 2.5,
+            "variants": {
+                "720p": "dataset/processed/asl/goodbye_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "greetings"
+            }
+        },
+        "THANK YOU": {
+            "videoPath": "dataset/processed/asl/thank_you_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/thank_you.jpg",
+            "duration": 1.8,
+            "variants": {
+                "720p": "dataset/processed/asl/thank_you_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "PLEASE": {
+            "videoPath": "dataset/processed/asl/please_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/please.jpg",
+            "duration": 1.5,
+            "variants": {
+                "720p": "dataset/processed/asl/please_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "YES": {
+            "videoPath": "dataset/processed/asl/yes_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/yes.jpg",
+            "duration": 1.2,
+            "variants": {
+                "720p": "dataset/processed/asl/yes_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "NO": {
+            "videoPath": "dataset/processed/asl/no_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/no.jpg",
+            "duration": 1.0,
+            "variants": {
+                "720p": "dataset/processed/asl/no_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "HELP": {
+            "videoPath": "dataset/processed/asl/help_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/help.jpg",
+            "duration": 1.8,
+            "variants": {
+                "720p": "dataset/processed/asl/help_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "emergency"
+            }
+        },
+        "SORRY": {
+            "videoPath": "dataset/processed/asl/sorry_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/sorry.jpg",
+            "duration": 1.5,
+            "variants": {
+                "720p": "dataset/processed/asl/sorry_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "I LOVE YOU": {
+            "videoPath": "dataset/processed/asl/i_love_you_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/i_love_you.jpg",
+            "duration": 2.0,
+            "variants": {
+                "720p": "dataset/processed/asl/i_love_you_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "emotions"
+            }
+        },
+        "UNDERSTAND": {
+            "videoPath": "dataset/processed/asl/understand_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/understand.jpg",
+            "duration": 1.8,
+            "variants": {
+                "720p": "dataset/processed/asl/understand_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "communication"
+            }
+        },
+        "WHAT": {
+            "videoPath": "dataset/processed/asl/what_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/what.jpg",
+            "duration": 1.3,
+            "variants": {
+                "720p": "dataset/processed/asl/what_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "questions"
+            }
+        },
+        "WHERE": {
+            "videoPath": "dataset/processed/asl/where_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/where.jpg",
+            "duration": 1.4,
+            "variants": {
+                "720p": "dataset/processed/asl/where_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "questions"
+            }
+        },
+        "HOW": {
+            "videoPath": "dataset/processed/asl/how_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/how.jpg",
+            "duration": 1.3,
+            "variants": {
+                "720p": "dataset/processed/asl/how_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "questions"
+            }
+        },
+        "NAME": {
+            "videoPath": "dataset/processed/asl/name_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/name.jpg",
+            "duration": 1.6,
+            "variants": {
+                "720p": "dataset/processed/asl/name_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "identity"
+            }
+        },
+        "LEARN": {
+            "videoPath": "dataset/processed/asl/learn_720p.mp4",
+            "thumbnail": "dataset/thumbnails/asl/learn.jpg",
+            "duration": 1.8,
+            "variants": {
+                "720p": "dataset/processed/asl/learn_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "education"
+            }
+        }
+    },
+    "BSL": {
+        "HELLO": {
+            "videoPath": "dataset/processed/bsl/hello_720p.mp4",
+            "thumbnail": "dataset/thumbnails/bsl/hello.jpg",
+            "duration": 2.2,
+            "variants": {
+                "720p": "dataset/processed/bsl/hello_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "greetings"
+            }
+        },
+        "GOODBYE": {
+            "videoPath": "dataset/processed/bsl/goodbye_720p.mp4",
+            "thumbnail": "dataset/thumbnails/bsl/goodbye.jpg",
+            "duration": 2.0,
+            "variants": {
+                "720p": "dataset/processed/bsl/goodbye_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "greetings"
+            }
+        },
+        "THANK YOU": {
+            "videoPath": "dataset/processed/bsl/thank_you_720p.mp4",
+            "thumbnail": "dataset/thumbnails/bsl/thank_you.jpg",
+            "duration": 1.9,
+            "variants": {
+                "720p": "dataset/processed/bsl/thank_you_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "PLEASE": {
+            "videoPath": "dataset/processed/bsl/please_720p.mp4",
+            "thumbnail": "dataset/thumbnails/bsl/please.jpg",
+            "duration": 1.6,
+            "variants": {
+                "720p": "dataset/processed/bsl/please_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "YES": {
+            "videoPath": "dataset/processed/bsl/yes_720p.mp4",
+            "thumbnail": "dataset/thumbnails/bsl/yes.jpg",
+            "duration": 1.1,
+            "variants": {
+                "720p": "dataset/processed/bsl/yes_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "NO": {
+            "videoPath": "dataset/processed/bsl/no_720p.mp4",
+            "thumbnail": "dataset/thumbnails/bsl/no.jpg",
+            "duration": 1.0,
+            "variants": {
+                "720p": "dataset/processed/bsl/no_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "HELP": {
+            "videoPath": "dataset/processed/bsl/help_720p.mp4",
+            "thumbnail": "dataset/thumbnails/bsl/help.jpg",
+            "duration": 2.0,
+            "variants": {
+                "720p": "dataset/processed/bsl/help_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "emergency"
+            }
+        },
+        "SORRY": {
+            "videoPath": "dataset/processed/bsl/sorry_720p.mp4",
+            "thumbnail": "dataset/thumbnails/bsl/sorry.jpg",
+            "duration": 1.7,
+            "variants": {
+                "720p": "dataset/processed/bsl/sorry_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        }
+    },
+    "ISL": {
+        "HELLO": {
+            "videoPath": "dataset/processed/isl/hello_720p.mp4",
+            "thumbnail": "dataset/thumbnails/isl/hello.jpg",
+            "duration": 2.3,
+            "variants": {
+                "720p": "dataset/processed/isl/hello_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "greetings"
+            }
+        },
+        "NAMASTE": {
+            "videoPath": "dataset/processed/isl/namaste_720p.mp4",
+            "thumbnail": "dataset/thumbnails/isl/namaste.jpg",
+            "duration": 2.0,
+            "variants": {
+                "720p": "dataset/processed/isl/namaste_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "greetings"
+            }
+        },
+        "THANK YOU": {
+            "videoPath": "dataset/processed/isl/thank_you_720p.mp4",
+            "thumbnail": "dataset/thumbnails/isl/thank_you.jpg",
+            "duration": 1.8,
+            "variants": {
+                "720p": "dataset/processed/isl/thank_you_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "YES": {
+            "videoPath": "dataset/processed/isl/yes_720p.mp4",
+            "thumbnail": "dataset/thumbnails/isl/yes.jpg",
+            "duration": 1.2,
+            "variants": {
+                "720p": "dataset/processed/isl/yes_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "NO": {
+            "videoPath": "dataset/processed/isl/no_720p.mp4",
+            "thumbnail": "dataset/thumbnails/isl/no.jpg",
+            "duration": 1.1,
+            "variants": {
+                "720p": "dataset/processed/isl/no_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "common"
+            }
+        },
+        "HELP": {
+            "videoPath": "dataset/processed/isl/help_720p.mp4",
+            "thumbnail": "dataset/thumbnails/isl/help.jpg",
+            "duration": 1.9,
+            "variants": {
+                "720p": "dataset/processed/isl/help_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "emergency"
+            }
+        },
+        "WATER": {
+            "videoPath": "dataset/processed/isl/water_720p.mp4",
+            "thumbnail": "dataset/thumbnails/isl/water.jpg",
+            "duration": 1.5,
+            "variants": {
+                "720p": "dataset/processed/isl/water_720p.mp4"
+            },
+            "metadata": {
+                "fps": 30,
+                "resolution": "1280x720",
+                "category": "basic"
+            }
+        }
+    }
+}
