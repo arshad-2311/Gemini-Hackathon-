@@ -3,6 +3,7 @@ services:
   - type: web
     name: signbridge-backend
     runtime: node
+    rootDirectory: backend  # <--- CRITICAL FIX: Tells Render where the app lives
     region: oregon
     plan: free
     buildCommand: npm install
